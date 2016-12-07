@@ -1,6 +1,8 @@
 'use strict';
 
 const fs = require('fs');
+const request = require('request');
+
 const readStream = fs.createReadStream('data/HIBP_data.txt');
 let fileRead;
 let obj = {};
@@ -41,3 +43,4 @@ function parseData(inputLine) {
     }
   });
 }
+
